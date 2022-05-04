@@ -23,7 +23,9 @@
 
 <body>
     <div class="wrap">
-        <div class="heading">Список стран</div>
+        <div class="heading">
+            Список стран
+        </div>
 
         <div id="react-app"></div>
     </div>
@@ -36,13 +38,13 @@
             return (
                 <div className="country-grid">
                     {countriesListGroupedByLetter.map(({ letter, countries }) => (
-                        <div className="country-grid__item" key={letter}>
-                            <div className="country-grid__item-first-letter">{letter}</div>
+                        <section className="country-grid__item" key={letter}>
+                            <title className="country-grid__item-first-letter">{letter}</title>
 
                             {countries.map((countryData, i) =>
                                 <Country {...countryData} key={i} />
                             )}
-                        </div>
+                        </section>
                     ))}
                 </div>
             );
@@ -50,25 +52,25 @@
 
         function Country({ flag, name, fullname, population, area }) {
             return (
-                <div className="country">
+                <article className="country">
                     <img class="country__flag" src={flag} alt="" />
                     <div class="country__description">
-                        <div className="country__names">
+                        <heading className="country__names">
                             <p className="country__names--name">{name}</p>
                             <p className="country__names--fullname">{fullname}</p>
-                        </div>
-                        <div className="country__stats">
-                            <div className="country__stats--population">
+                        </heading>
+                        <dl className="country__stats">
+                            <dt className="country__stats--population">
                                 <svg className="population__icon" width={16} height={16}><use xlinkHref="#population" /></svg>
-                                <p className="population__text">{population}</p>
-                            </div>
-                            <div className="country__stats--area">
+                                <dd className="population__text">{population}</dd>
+                            </dt>
+                            <dt className="country__stats--area">
                                 <svg className="area__icon" width={16} height={16}><use xlinkHref="#area" /></svg>
-                                <p className="area__text">{area}&nbsp;км2</p>
-                            </div>
-                        </div>
+                                <dd className="area__text">{area}&nbsp;км2</dd>
+                            </dt>
+                        </dl>
                     </div>
-                </div>
+                </article>
             );
         }
 
