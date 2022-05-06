@@ -23,9 +23,9 @@
 
 <body>
     <div class="wrap">
-        <div class="heading">
+        <header class="heading">
             Список стран
-        </div>
+        </header>
 
         <div id="react-app"></div>
     </div>
@@ -39,7 +39,7 @@
                 <section className="country-grid">
                     {countriesListGroupedByLetter.map(({ letter, countries }) => (
                         <section className="country-grid__item" key={letter}>
-                            <header className="country-grid__item-first-letter">{letter}</header>
+                            <header aria-hidden="true" className="country-grid__item-first-letter">{letter}</header>
 
                             {countries.map((countryData, i) =>
                                 <Country {...countryData} key={i} />
@@ -61,11 +61,11 @@
                         </heading>
                         <dl className="country__stats">
                             <dt className="country__stats--population">
-                                <svg className="population__icon" width={16} height={16}><use xlinkHref="#population" /></svg>
+                                <svg aria-label="Население" className="population__icon" width={16} height={16}><use xlinkHref="#population" /></svg>
                                 <dd className="population__text">{population}</dd>
                             </dt>
                             <dt className="country__stats--area">
-                                <svg className="area__icon" width={16} height={16}><use xlinkHref="#area" /></svg>
+                                <svg aria-label="Площадь" className="area__icon" width={16} height={16}><use xlinkHref="#area" /></svg>
                                 <dd className="area__text">{area}&nbsp;км2</dd>
                             </dt>
                         </dl>
