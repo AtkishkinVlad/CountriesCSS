@@ -31,6 +31,7 @@ body {
 .country__stats {
   display: flex;
   column-gap: 20px;
+  row-gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -81,7 +82,8 @@ body {
   .country-grid {
     columns: 1;
     column-fill: balance;
-    column-gap: 50px;
+    column-gap: 58px;
+    column-width: 374px;
   }
 }
 
@@ -89,7 +91,8 @@ body {
   .country-grid {
     columns: 2;
     column-fill: balance;
-    column-gap: 50px;
+    column-gap: 58px;
+    column-width: 374px;
     column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
@@ -98,7 +101,8 @@ body {
   .country-grid {
     columns: 3;
     column-fill: balance;
-    column-gap: 50px;
+    column-gap: 58px;
+    column-width: 374px;
     column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
@@ -107,7 +111,8 @@ body {
   .country-grid {
     columns: 4;
     column-fill: balance;
-    column-gap: 50px;
+    column-gap: 58px;
+    column-width: 374px;
     column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
@@ -116,7 +121,8 @@ body {
   .country-grid {
     columns: 5;
     column-fill: balance;
-    column-gap: 50px;
+    column-gap: 58px;
+    column-width: 374px;
     column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }

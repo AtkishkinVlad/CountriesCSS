@@ -39,7 +39,7 @@
                 <div className="country-grid">
                     {countriesListGroupedByLetter.map(({ letter, countries }) => (
                         <section className="country-grid__item" key={letter}>
-                            <title className="country-grid__item-first-letter">{letter}</title>
+                            <div className="country-grid__item-first-letter">{letter}</div>
 
                             {countries.map((countryData, i) =>
                                 <Country {...countryData} key={i} />
@@ -54,7 +54,7 @@
             return (
                 <article className="country">
                     <img class="country__flag" src={flag} alt="" />
-                    <div class="country__description">
+                    <main class="country__description">
                         <heading className="country__names">
                             <p className="country__names--name">{name}</p>
                             <p className="country__names--fullname">{fullname}</p>
@@ -69,7 +69,7 @@
                                 <dd className="area__text">{area}&nbsp;км2</dd>
                             </dt>
                         </dl>
-                    </div>
+                    </main>
                 </article>
             );
         }
