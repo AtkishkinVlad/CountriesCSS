@@ -36,17 +36,17 @@
     <script type="text/babel">
         function CountryGrid({ countriesListGroupedByLetter }) {
             return (
-                <div className="country-grid">
+                <section className="country-grid">
                     {countriesListGroupedByLetter.map(({ letter, countries }) => (
                         <section className="country-grid__item" key={letter}>
-                            <div className="country-grid__item-first-letter">{letter}</div>
+                            <header className="country-grid__item-first-letter">{letter}</header>
 
                             {countries.map((countryData, i) =>
                                 <Country {...countryData} key={i} />
                             )}
                         </section>
                     ))}
-                </div>
+                </section>
             );
         }
 
