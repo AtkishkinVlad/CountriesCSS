@@ -26,12 +26,14 @@ body {
 .country__names--fullname {
   color: #aaaaaa;
   font-size: 14px;
+  margin-top: 5px;
 }
 
 .country__stats {
   display: flex;
   column-gap: 20px;
   row-gap: 10px;
+  margin-top: 0px;
   flex-wrap: wrap;
 }
 
