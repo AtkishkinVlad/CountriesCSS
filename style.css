@@ -39,6 +39,7 @@ body {
   row-gap: 10px;
   margin-top: 0px;
   flex-wrap: wrap;
+  line-height: 1;
 }
 
 .heading {
@@ -56,6 +57,12 @@ body {
   padding-top: 20px;
   padding-left: 24px;
   column-gap: 12px;
+  line-height: 1.4;
+}
+
+.country__flag {
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.25));
+  border-radius: 0px;
 }
 
 .country__stats--population {
@@ -63,9 +70,10 @@ body {
 }
 
 .population__text {
-  margin-left: 10px;
   margin-top: 0px;
+  margin-left: -11px;
   white-space: nowrap;
+  color: rgba(91, 91, 91, 1);
 }
 
 .country__stats--area {
@@ -73,9 +81,10 @@ body {
 }
 
 .area__text {
-  margin-left: 10px;
   margin-top: 0px;
+  margin-left: -11px;
   white-space: nowrap;
+  color: rgba(91, 91, 91, 1);
 }
 
 .country__flag {
@@ -131,5 +140,3 @@ body {
     column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
-
-

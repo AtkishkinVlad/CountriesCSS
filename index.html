@@ -53,8 +53,8 @@
         function Country({ flag, name, fullname, population, area }) {
             return (
                 <article className="country">
-                    <img class="country__flag" src={flag} alt="" />
-                    <main class="country__description">
+                    <img className="country__flag" src={flag} alt="" />
+                    <section className="country__description">
                         <heading className="country__names">
                             <p className="country__names--name">{name}</p>
                             <p className="country__names--fullname">{fullname}</p>
@@ -62,14 +62,14 @@
                         <dl className="country__stats">
                             <dt className="country__stats--population">
                                 <svg aria-label="Население" className="population__icon" width={16} height={16}><use xlinkHref="#population" /></svg>
-                                <dd className="population__text">{population}</dd>
                             </dt>
+                            <dd className="population__text">{population}</dd>
                             <dt className="country__stats--area">
                                 <svg aria-label="Площадь" className="area__icon" width={16} height={16}><use xlinkHref="#area" /></svg>
-                                <dd className="area__text">{area}&nbsp;км2</dd>
                             </dt>
+                            <dd className="area__text">{area}&nbsp;км<sup><small>2</small></sup></dd>
                         </dl>
-                    </main>
+                    </section>
                 </article>
             );
         }
