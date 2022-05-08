@@ -36,7 +36,7 @@ body {
 .country__stats {
   display: flex;
   column-gap: 20px;
-  row-gap: 10px;
+  row-gap: 50px;
   margin-top: 0px;
   flex-wrap: wrap;
   line-height: 1;
@@ -70,7 +70,7 @@ body {
 }
 
 .population__text {
-  margin-top: 0px;
+  margin-top: 1px;
   margin-left: -11px;
   white-space: nowrap;
   color: rgba(91, 91, 91, 1);
@@ -81,7 +81,7 @@ body {
 }
 
 .area__text {
-  margin-top: 0px;
+  margin-top: -3px;
   margin-left: -11px;
   white-space: nowrap;
   color: rgba(91, 91, 91, 1);
