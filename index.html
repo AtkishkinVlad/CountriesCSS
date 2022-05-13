@@ -60,14 +60,18 @@
                             <p className="country__names--fullname">{fullname}</p>
                         </heading>
                         <dl className="country__stats">
-                            <dt className="country__stats--population">
-                                <svg className="population__icon" width={16} height={16}><title>Население</title><use xlinkHref="#population" /></svg>
-                            </dt>
-                            <dd className="population__text">{population}</dd>
-                            <dt className="country__stats--area">
-                                <svg className="area__icon" width={16} height={16}><title>Площадь</title><use xlinkHref="#area" /></svg>
-                            </dt>
-                            <dd className="area__text">{area}&nbsp;км<sup><small>2</small></sup></dd>
+                            <div className="country__stat-container">
+                                <dt className="country__stats--population">
+                                    <svg className="population__icon" width={16} height={16}><title>Население</title><use xlinkHref="#population" /></svg>
+                                </dt>
+                                <dd className="population__text">{population}</dd>
+                            </div>
+                            <div className="country__stat-container">
+                                <dt className="country__stats--area">
+                                    <svg className="area__icon" width={16} height={16}><title>Площадь</title><use xlinkHref="#area" /></svg>
+                                </dt>
+                                <dd className="area__text">{area}&nbsp;км<sup><small>2</small></sup></dd>
+                            </div>
                         </dl>
                     </section>
                 </article>
