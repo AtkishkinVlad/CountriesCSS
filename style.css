@@ -53,6 +53,7 @@ body {
 .country {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 24px;
@@ -87,56 +88,38 @@ body {
   color: rgba(91, 91, 91, 1);
 }
 
-.country__flag {
-  width: 50px;
-  height: 25px;
+.country-grid {
+  column-fill: balance;
+  column-gap: 58px;
+  column-rule: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 768px) {
   .country-grid {
     columns: 1;
-    column-fill: balance;
-    column-gap: 58px;
-    column-width: 374px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .country-grid {
     columns: 2;
-    column-fill: balance;
-    column-gap: 58px;
-    column-width: 374px;
-    column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 
-@media screen and (min-width: 1199px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .country-grid {
     columns: 3;
-    column-fill: balance;
-    column-gap: 58px;
-    column-width: 374px;
-    column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1919px) {
+@media screen and (min-width: 1440px) {
   .country-grid {
     columns: 4;
-    column-fill: balance;
-    column-gap: 58px;
-    column-width: 374px;
-    column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 
-@media screen and (min-width: 1919px) {
+@media screen and (min-width: 1920px) {
   .country-grid {
     columns: 5;
-    column-fill: balance;
-    column-gap: 58px;
-    column-width: 374px;
-    column-rule: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
