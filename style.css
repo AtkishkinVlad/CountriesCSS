@@ -51,10 +51,7 @@ body {
 
 .heading {
   font-size: 34px;
-  padding-left: 24px;
-  padding-right: 54px;
-  padding-top: 42px;
-  padding-bottom: 63px;
+  padding: 42px 54px 63px 24px;
 }
 
 .country {
@@ -95,15 +92,9 @@ body {
 }
 
 .country-grid {
-  column-fill: balance;
-  column-gap: 58px;
+  column-gap: 50px;
   column-rule: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (max-width: 768px) {
-  .country-grid {
-    columns: 1;
-  }
+  columns: 1;
 }
 
 @media screen and (min-width: 768px) {
